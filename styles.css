@@ -26,22 +26,23 @@
   font-weight: bold
 }
 
-abbr {
-  color: #ff00d7;
-  text-decoration: underline dotted;
-  cursor: help;
+.final-answer{
+  color: #9c27b0;
+  font-weight: bold
 }
+
 
 .custom-tooltip {
   position: relative;
   display: inline-block;
   cursor: pointer;
   text-decoration: underline dotted;
+  color: #0eeaff;
 }
 
 .custom-tooltip .tooltip-text {
   visibility: hidden;
-  width: 300px;
+  width: 1000px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -51,7 +52,7 @@ abbr {
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -500px;
   opacity: 0;
   transition: opacity 0.3s;
 }

@@ -106,10 +106,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a></li>
   <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task 3</a></li>
   <li><a href="#task-4" id="toc-task-4" class="nav-link" data-scroll-target="#task-4">Task 4</a></li>
-  <li><a href="#task-5" id="toc-task-5" class="nav-link" data-scroll-target="#task-5">Task 5</a></li>
-  <li><a href="#task-6" id="toc-task-6" class="nav-link" data-scroll-target="#task-6">Task 6</a></li>
-  <li><a href="#task-7" id="toc-task-7" class="nav-link" data-scroll-target="#task-7">Task 7</a></li>
-  <li><a href="#task-8" id="toc-task-8" class="nav-link" data-scroll-target="#task-8">Task 8</a></li>
   </ul>
 </nav>
     </div>
@@ -159,29 +155,29 @@ Tell me what is the boiling point of the reaction product between isoamyl acetat
 <p>First, I need to find the SMILES of isoamyl acetate and ethanol.</p>
 <p><span class="action"><span class="action">Action:</span></span> Get SMILES of molecule</p>
 <p><span class="action-input"><span class="action-input">Action Input:</span></span> isoamyl acetate</p>
-<p><span class="observ"><span class="observ">Observation:</span></span> <span class="observ-body">CC(C)CCOC(C)=O</span></p>
+<p><span class="observ"><span class="observ">Observation:</span> <span class="observ-body"></span> <span class="observ-body">CC(C)CCOC(C)=O</span></span></p>
 <p><span class="thought"><span class="thought">Thought:</span> </span> Now I have the SMILES of isoamyl acetate, I need to get the SMILES of ethanol.</p>
 <p><span class="action"><span class="action">Action:</span></span> Get SMILES of molecule</p>
 <p><span class="action-input"><span class="action-input">Action Input:</span></span> ethanol</p>
-<p><span class="observ"><span class="observ">Observation:</span></span> <span class="observ-body">CCO</span></p>
+<p><span class="observ"><span class="observ">Observation:</span> <span class="observ-body"></span> <span class="observ-body">CCO</span></span></p>
 <p><span class="thought"><span class="thought">Thought:</span> </span> Now I have the SMILES of both isoamyl acetate and ethanol, I need to predict the product of their reaction.</p>
 <p><span class="action"><span class="action">Action:</span></span> Reaction prediction</p>
 <p><span class="action-input"><span class="action-input">Action Input:</span></span> CC(C)CCOC(C)=O.CCO</p>
-<p><span class="observ"><span class="observ">Observation:</span></span> <span class="observ-body">CC(C)CCO</span></p>
+<p><span class="observ"><span class="observ">Observation:</span> <span class="observ-body"></span> <span class="observ-body">CC(C)CCO</span></span></p>
 <p><span class="thought"><span class="thought">Thought:</span> </span> Now I have the product of the reaction, I need to find its boiling point.</p>
 <p><span class="action"><span class="action">Action:</span></span> Web search</p>
 <p><span class="action-input"><span class="action-input">Action Input:</span></span> CC(C)CCO boiling point</p>
-<p><span class="observ"><span class="observ">Observation:</span></span> <span class="observ-body">Because of this, water boils at 99.97 °C (211.95 °F) under standard pressure at sea level, but at 93.4 °C (200.1 °F) at 1,905 metres (6,250 ft) altitude. For a …</span></p>
+<p><span class="observ"><span class="observ">Observation:</span> <span class="observ-body"></span> <span class="observ-body">Because of this, water boils at 99.97 °C (211.95 °F) under standard pressure at sea level, but at 93.4 °C (200.1 °F) at 1,905 metres (6,250 ft) altitude. For a …</span></span></p>
 <p><span class="thought"><span class="thought">Thought:</span> </span> The web search result seems unrelated to the boiling point of the reaction product. I need to try another search with the molecule’s name.</p>
 <p><span class="action"><span class="action">Action:</span></span> Obtain molecule name</p>
 <p><span class="action-input"><span class="action-input">Action Input:</span></span> CC(C)CCO</p>
-<p><span class="observ"><span class="observ">Observation:</span></span> <span class="observ-body">123-51-3</span></p>
+<p><span class="observ"><span class="observ">Observation:</span> <span class="observ-body"></span> <span class="observ-body">123-51-3</span></span></p>
 <p><span class="thought"><span class="thought">Thought:</span> </span> Now I have the registry number of the reaction product, I will use it to search for its boiling point.</p>
 <p><span class="action"><span class="action">Action:</span></span> Web search</p>
 <p><span class="action-input"><span class="action-input">Action Input:</span></span> 123-51-3 boiling point</p>
-<p><span class="observ"><span class="observ">Observation:</span></span> <span class="observ-body">Boiling Point: 130 °C(lit.)</span></p>
+<p><span class="observ"><span class="observ">Observation:</span> <span class="observ-body"></span> <span class="observ-body">Boiling Point: 130 °C(lit.)</span></span></p>
 <p><span class="thought"><span class="thought">Thought:</span> </span> I now know the final answer</p>
-<p>Final Answer: The boiling point of the reaction product between isoamyl acetate and ethanol is 130°C.</p>
+<p><span class="final-answer">Final Answer: The boiling point of the reaction product between isoamyl acetate and ethanol is 130°C.</span></p>
 </section>
 </div>
 </div>
@@ -228,56 +224,57 @@ I need a sample of nicotine or some similar molecule. Propose a list of 3 simila
 <p>First, I need to find the SMILES of nicotine.</p>
 <p><span class="action">Action:</span> Get SMILES of molecule</p>
 <p><span class="action-input">Action Input:</span> Nicotine</p>
-<p><span class="observ">Observation:</span> CN1CCCC1C1=CC=CN=C1</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span></span></p>
 <p><span class="thought">Thought:</span> Now that I have the SMILES of nicotine, I need to find 3 similar molecules.</p>
 <p><span class="action">Action:</span> Molecular similarity calculator</p>
-<p><span class="action-input">Action Input:</span> CN1CCCC1C1=CC=CN=C1, 3</p>
-<p><span class="observ">Observation:</span> Error: Not a valid SMILES string</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span>, 3</p>
+<p><span class="observ"><span class="observ">Observation:</span> <span class="observ-body"></span> <span class="observ-body">Error: Not a valid SMILES string</span></span></p>
 <p><span class="thought">Thought:</span> It seems my method to find similar molecules didn’t work. I will try a web search to find molecules similar to nicotine.</p>
 <p><span class="action">Action:</span> Web search</p>
 <p><span class="action-input">Action Input:</span> molecules similar to nicotine</p>
-<p><span class="observ">Observation:</span> Neonicotinoids, which are derived from and structurally similar to nicotine, are widely used as agricultural and veterinary pesticides as of 2016. <span class="thought">Thought:</span> I found out that neonicotinoids are structurally similar to nicotine. I will identify 3 examples of neonicotinoids and find their SMILES.</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> Neonicotinoids, which are derived from and structurally similar to nicotine, are widely used as agricultural and veterinary pesticides as of 2016.</span></p>
+<p><span class="thought">Thought:</span> I found out that neonicotinoids are structurally similar to nicotine. I will identify 3 examples of neonicotinoids and find their SMILES.</p>
 <p><span class="action">Action:</span> Web search</p>
 <p><span class="action-input">Action Input:</span> 3 examples of neonicotinoids</p>
-<p><span class="observ">Observation:</span> Neonicotinoids are a new class of insecticides with widespread use in veterinary medicine and crop production. The neonicotinoid insecticides include imidacloprid, acetamiprid, dinotefuran, thiamethoxam, and clothianidin.</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> Neonicotinoids are a new class of insecticides with widespread use in veterinary medicine and crop production. The neonicotinoid insecticides include imidacloprid, acetamiprid, dinotefuran, thiamethoxam, and clothianidin.</span></p>
 <p><span class="thought">Thought:</span> I found 3 examples of neonicotinoids: imidacloprid, acetamiprid, and dinotefuran. I will obtain the SMILES of these molecules.</p>
 <p><span class="action">Action:</span> Get SMILES of molecule</p>
 <p><span class="action-input">Action Input:</span> Imidacloprid</p>
-<p><span class="observ">Observation:</span> <span class="custom-tooltip">SMILES&lt;span class=“tooltip-text&gt;[O-][N+](=O)=C1/NCCN1CC1=CC=C(Cl)N=C1</span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="[O-][N+](=O)\N=C1/NCCN1CC1=CC=C(Cl)N=C1">SMILES<span class="tooltip-text">[O-][N+](=O)=C1/NCCN1CC1=CC=C(Cl)N=C1</span></span></span></p>
 <p><span class="thought">Thought:</span> Now I have the SMILES of imidacloprid, I will obtain the SMILES of acetamiprid and dinotefuran.</p>
 <p><span class="action">Action:</span> Get SMILES of molecule</p>
 <p><span class="action-input">Action Input:</span> Acetamiprid</p>
-<p><span class="observ">Observation:</span> CN(CC1=CC=C(Cl)N=C1)C()=N#N</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CN(CC1=CC=C(Cl)N=C1)C(\C)=N\C#N">SMILES<span class="tooltip-text">CN(CC1=CC=C(Cl)N=C1)C()=N#N</span></span></span></p>
 <p><span class="thought">Thought:</span> Now I have the SMILES of acetamiprid, I will obtain the SMILES of dinotefuran.</p>
 <p><span class="action">Action:</span> Get SMILES of molecule</p>
 <p><span class="action-input">Action Input:</span> Dinotefuran</p>
-<p><span class="observ">Observation:</span> CNC(N<a href="[O-]">N+</a>=O)=NCC1CCOC1</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CNC(N[N+]([O-])=O)=NCC1CCOC1">SMILES<span class="tooltip-text">CNC(N<a href="[O-]">N+</a>=O)=NCC1CCOC1</span></span></span></p>
 <p><span class="thought">Thought:</span> I now have the SMILES of nicotine, imidacloprid, acetamiprid, and dinotefuran. I will compare their similarity to nicotine.</p>
 <p><span class="action">Action:</span> Molecular similarity calculator</p>
-<p><span class="action-input">Action Input:</span> CN1CCCC1C1=CC=CN=C1, [O-][N+](=O)=C1/NCCN1CC1=CC=C(Cl)N=C1</p>
-<p><span class="observ">Observation:</span> The Tanimoto similarity between CN1CCCC1C1=CC=CN=C1 and [O-][N+](=O)=C1/NCCN1CC1=CC=C(Cl)N=C1 is 0.1452, indicating that the two molecules are not similar.</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span>, <span class="custom-tooltip" data-clipboard-text="[O-][N+](=O)\N=C1/NCCN1CC1=CC=C(Cl)N=C1">SMILES<span class="tooltip-text">[O-][N+](=O)=C1/NCCN1CC1=CC=C(Cl)N=C1</span></span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> The Tanimoto similarity between <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span> and <span class="custom-tooltip" data-clipboard-text="[O-][N+](=O)\N=C1/NCCN1CC1=CC=C(Cl)N=C1">SMILES<span class="tooltip-text">[O-][N+](=O)=C1/NCCN1CC1=CC=C(Cl)N=C1</span></span> is 0.1452, indicating that the two molecules are not similar.</span></p>
 <p><span class="thought">Thought:</span> I have the similarity between nicotine and imidacloprid. I will compare the similarity of nicotine to acetamiprid and dinotefuran.</p>
 <p><span class="action">Action:</span> Molecular similarity calculator</p>
-<p><span class="action-input">Action Input:</span> CN1CCCC1C1=CC=CN=C1, CN(CC1=CC=C(Cl)N=C1)C()=N#N</p>
-<p><span class="observ">Observation:</span> The Tanimoto similarity between CN1CCCC1C1=CC=CN=C1 and CN(CC1=CC=C(Cl)N=C1)C()=N#N is 0.1, indicating that the two molecules are not similar.</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> The Tanimoto similarity between <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span> and <span class="custom-tooltip" data-clipboard-text="CN(CC1=CC=C(Cl)N=C1)C(\C)=N\C#N">SMILES<span class="tooltip-text">CN(CC1=CC=C(Cl)N=C1)C()=N#N</span></span> is 0.1, indicating that the two molecules are not similar.</span></p>
 <p><span class="thought">Thought:</span> I have the similarity between nicotine and acetamiprid. I will compare the similarity of nicotine to dinotefuran.</p>
 <p><span class="action">Action:</span> Molecular similarity calculator</p>
-<p><span class="action-input">Action Input:</span> CN1CCCC1C1=CC=CN=C1, CNC(N<a href="[O-]">N+</a>=O)=NCC1CCOC1</p>
-<p><span class="observ">Observation:</span> The Tanimoto similarity between CN1CCCC1C1=CC=CN=C1 and CNC(N<a href="[O-]">N+</a>=O)=NCC1CCOC1 is 0.0645, indicating that the two molecules are not similar.</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span>, <span class="custom-tooltip" data-clipboard-text="CNC(N[N+]([O-])=O)=NCC1CCOC1">SMILES<span class="tooltip-text">CNC(N<a href="[O-]">N+</a>=O)=NCC1CCOC1</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> The Tanimoto similarity between <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span> and <span class="custom-tooltip" data-clipboard-text="CNC(N[N+]([O-])=O)=NCC1CCOC1">SMILES<span class="tooltip-text">CNC(N<a href="[O-]">N+</a>=O)=NCC1CCOC1</span></span> is 0.0645, indicating that the two molecules are not similar.</span></p>
 <p><span class="thought">Thought:</span> The similarities between nicotine and the three neonicotinoids are not high. However, since they are structurally related, I will proceed with finding the prices of these molecules and list them as an alternative option.</p>
 <p><span class="action">Action:</span> Get price of molecule</p>
-<p><span class="action-input">Action Input:</span> ImidaclopridObtaining data for 1 substances.</p>
-<p><span class="observ">Observation:</span> 250.0mg of this molecule cost 52 USD.</p>
+<p><span class="action-input">Action Input:</span> Imidacloprid</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> 250.0mg of this molecule cost 52 USD.</span></p>
 <p><span class="thought">Thought:</span> I have found the price of imidacloprid. Now I will find the prices of acetamiprid and dinotefuran.</p>
 <p><span class="action">Action:</span> Get price of molecule</p>
-<p><span class="action-input">Action Input:</span> AcetamipridObtaining data for 1 substances.</p>
-<p><span class="observ">Observation:</span> 500g of this molecule cost 191 USD.</p>
+<p><span class="action-input">Action Input:</span> Acetamiprid</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> 500g of this molecule cost 191 USD.</span></p>
 <p><span class="thought">Thought:</span> I have found the price of acetamiprid. Now I will find the price of dinotefuran.</p>
 <p><span class="action">Action:</span> Get price of molecule</p>
-<p><span class="action-input">Action Input:</span> DinotefuranObtaining data for 1 substances.</p>
-<p><span class="observ">Observation:</span> 100.0mg of this molecule cost 37 USD.</p>
+<p><span class="action-input">Action Input:</span> Dinotefuran</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> 100.0mg of this molecule cost 37 USD.</span></p>
 <p><span class="thought">Thought:</span> I now know the final answer</p>
-<p>Final Answer: The list of 3 molecules similar to nicotine are imidacloprid, acetamiprid, and dinotefuran. The prices are as follows: Imidacloprid - 52 USD for 250.0mg, Acetamiprid - 191 USD for 500g, and Dinotefuran - 37 USD for 100.0mg. Their similarity values to nicotine are 0.1452, 0.1, and 0.0645, respectively.</p>
+<p><span class="final-answer">Final Answer: The list of 3 molecules similar to nicotine are imidacloprid, acetamiprid, and dinotefuran. The prices are as follows: Imidacloprid - 52 USD for 250.0mg, Acetamiprid - 191 USD for 500g, and Dinotefuran - 37 USD for 100.0mg. Their similarity values to nicotine are 0.1452, 0.1, and 0.0645, respectively.</span></p>
 </section>
 </div>
 </div>
@@ -309,12 +306,32 @@ I need to synthesize a sample of atorvastatin. Please tell me how to synthesize 
 </div><div class="column justify-text" style="width:45%;">
 <section id="gpt-4-chemtools-2" class="level3">
 <h3 class="anchored" data-anchor-id="gpt-4-chemtools-2">GPT-4 + chemtools</h3>
-<p>First, I need to obtain the SMILES of atorvastatin. <span class="action">Action:</span> Get SMILES of molecule <span class="action-input">Action Input:</span> atorvastatin <span class="observ">Observation:</span> CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1 <span class="thought">Thought:</span> Now I need to plan a synthetic route for atorvastatin. <span class="action">Action:</span> Molecular synthesis planner. <span class="action-input">Action Input:</span> CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1Returning synthetic path 0 with confidence 0.995</p>
-<p><span class="observ">Observation:</span> Step 1: Mix CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(=O)OC(C)(C)C, ClCCl, and O=C(O)C(F)(F)F; this will produce CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1 <span class="thought">Thought:</span> I have the synthetic route for atorvastatin. Now, I will calculate the cost of reactants and compare it to the cost of buying atorvastatin directly. <span class="action">Action:</span> Get price of molecule <span class="action-input">Action Input:</span> CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(=O)OC(C)(C)CObtaining data for 1 substances.</p>
-<p><span class="observ">Observation:</span> 250mg of this molecule cost 10 USD. <span class="thought">Thought:</span> Now I will get the price of the second reactant. <span class="action">Action:</span> Get price of molecule <span class="action-input">Action Input:</span> ClCClObtaining data for 1 substances.</p>
-<p><span class="observ">Observation:</span> 500ml of this molecule cost 57 USD. <span class="thought">Thought:</span> Now I will get the price of the third reactant. <span class="action">Action:</span> Get price of molecule <span class="action-input">Action Input:</span> O=C(O)C(F)(F)FObtaining data for 1 substances.</p>
-<p><span class="observ">Observation:</span> 100.0mg of this molecule cost 19 USD. <span class="thought">Thought:</span> Now I will get the price of atorvastatin for comparison. <span class="action">Action:</span> Get price of molecule <span class="action-input">Action Input:</span> CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1Obtaining data for 1 substances.</p>
-<p><span class="observ">Observation:</span> 1mg of this molecule cost 6 USD. <span class="thought">Thought:</span> I now know the price of the reactants and atorvastatin. I will compare them to determine if it’s cheaper to synthesize it or buy it directly. Final Answer: The cost of reactants is 10 USD for 250mg of the first reactant, 57 USD for 500ml of the second reactant, and 19 USD for 100mg of the third reactant. The cost of buying atorvastatin directly is 6 USD per 1mg. Depending on the quantity needed, it may or may not be cheaper to synthesize it yourself.</p>
+<p>First, I need to obtain the SMILES of atorvastatin.</p>
+<p><span class="action">Action:</span> Get SMILES of molecule</p>
+<p><span class="action-input">Action Input:</span> atorvastatin</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC[C@@H](O)C[C@@H](O)CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1">SMILES<span class="tooltip-text">CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1</span></span></span></p>
+<p><span class="thought">Thought:</span> Now I need to plan a synthetic route for atorvastatin.</p>
+<p><span class="action">Action:</span> Molecular synthesis planner.</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC[C@@H](O)C[C@@H](O)CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1">SMILES<span class="tooltip-text">CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> Step 1: Mix <span class="custom-tooltip" data-clipboard-text="CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)OC(C)(C)C">SMILES<span class="tooltip-text">CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(=O)OC(C)(C)C</span></span>, ClCCl, and O=C(O)C(F)(F)F; this will produce <span class="custom-tooltip" data-clipboard-text="CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC[C@@H](O)C[C@@H](O)CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1">SMILES<span class="tooltip-text">CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1</span></span>.</span></p>
+<p><span class="thought">Thought:</span> I have the synthetic route for atorvastatin. Now, I will calculate the cost of reactants and compare it to the cost of buying atorvastatin directly.</p>
+<p><span class="action">Action:</span> Get price of molecule</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)OC(C)(C)C">SMILES<span class="tooltip-text">CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(=O)OC(C)(C)C</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> 250mg of this molecule cost 10 USD.</span></p>
+<p><span class="thought">Thought:</span> Now I will get the price of the second reactant.</p>
+<p><span class="action">Action:</span> Get price of molecule</p>
+<p><span class="action-input">Action Input:</span> ClCCl</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> 500ml of this molecule cost 57 USD.</span></p>
+<p><span class="thought">Thought:</span> Now I will get the price of the third reactant.</p>
+<p><span class="action">Action:</span> Get price of molecule</p>
+<p><span class="action-input">Action Input:</span> O=C(O)C(F)(F)F</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> 100.0mg of this molecule cost 19 USD.</span></p>
+<p><span class="thought">Thought:</span> Now I will get the price of atorvastatin for comparison.</p>
+<p><span class="action">Action:</span> Get price of molecule</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC[C@@H](O)C[C@@H](O)CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1">SMILES<span class="tooltip-text">CC(C)C1=C(C(=O)NC2=CC=CC=C2)C(=C(N1CC<a href="O">C@<span class="citation" data-cites="H">@H</span></a>C<a href="O">C@<span class="citation" data-cites="H">@H</span></a>CC(O)=O)C1=CC=C(F)C=C1)C1=CC=CC=C1</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> 1mg of this molecule cost 6 USD.</span></p>
+<p><span class="thought">Thought:</span> I now know the price of the reactants and atorvastatin. I will compare them to determine if it’s cheaper to synthesize it or buy it directly.</p>
+<p><span class="final-answer">Final Answer: The cost of reactants is 10 USD for 250mg of the first reactant, 57 USD for 500ml of the second reactant, and 19 USD for 100mg of the third reactant. The cost of buying atorvastatin directly is 6 USD per 1mg. Depending on the quantity needed, it may or may not be cheaper to synthesize it yourself.</span></p>
 </section>
 </div>
 </div>
@@ -349,10 +366,36 @@ Propose a compound with similar properties to the drug Dasatinib. Find a supplie
 </div><div class="column justify-text" style="width:45%;">
 <section id="gpt-4-chemtools-3" class="level3">
 <h3 class="anchored" data-anchor-id="gpt-4-chemtools-3">GPT-4 + chemtools</h3>
-<p>First, I should search for compounds with the same target as Dasatinib. <span class="action">Action:</span> Web search <span class="action-input">Action Input:</span> Dasatinib similar compounds targets <span class="observ">Observation:</span> Dasatinib is a potent Src/Abl inhibitor with low nanomolar inhibition against both Bcr-Abl and c-Src, as well as several other Src family … <span class="thought">Thought:</span> Now I know Dasatinib is a Src/Abl inhibitor. I should find other Src/Abl inhibitors to compare. <span class="action">Action:</span> Web search <span class="action-input">Action Input:</span> Src/Abl inhibitors list <span class="observ">Observation:</span> Bcr-Abl inhibitors paved the way of targeted therapy epoch. Imatinib was the first tyrosine kinase inhibitor to be discovered with high … <span class="thought">Thought:</span> I found a list of Src/Abl inhibitors. I will select Imatinib as a reference compound and obtain its SMILES. <span class="action">Action:</span> Get SMILES of molecule <span class="action-input">Action Input:</span> Imatinib <span class="observ">Observation:</span> CN1CCN(CC2=CC=C(C=C2)C(=O)NC2=CC=C(C)C(NC3=NC=CC(=N3)C3=CC=CN=C3)=C2)CC1 <span class="thought">Thought:</span> I have the SMILES of Imatinib. Now I will modify it slightly to create a novel compound and check if it’s patented. <span class="action">Action:</span> Molecule modificator <span class="action-input">Action Input:</span> CN1CCN(CC2=CC=C(C=C2)C(=O)NC2=CC=C(C)C(NC3=NC=CC(=N3)C3=CC=CN=C3)=C2)CC1 <span class="observ">Observation:</span> Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1 <span class="thought">Thought:</span> I have created a modified molecule. Now I will check if it’s patented. <span class="action">Action:</span> Patent checker <span class="action-input">Action Input:</span> Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1 <span class="observ">Observation:</span> Novel <span class="thought">Thought:</span> Great, the modified molecule is not patented. Now I will search for a supplier or draft an email to a synthesis CRO to order a custom synthesis. <span class="action">Action:</span> Get price of molecule <span class="action-input">Action Input:</span> Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1 <span class="observ">Observation:</span> Compound couldn’t be found. <span class="thought">Thought:</span> Since the compound couldn’t be found, I will draft an email to a synthesis CRO to order a custom synthesis. Final Answer: Subject: Custom Synthesis of Novel Src/Abl Inhibitor</p>
+<p>First, I should search for compounds with the same target as Dasatinib.</p>
+<p><span class="action">Action:</span> Web search</p>
+<p><span class="action-input">Action Input:</span> Dasatinib similar compounds targets</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> Dasatinib is a potent Src/Abl inhibitor with low nanomolar inhibition against both Bcr-Abl and c-Src, as well as several other Src family …</span></p>
+<p><span class="thought">Thought:</span> Now I know Dasatinib is a Src/Abl inhibitor. I should find other Src/Abl inhibitors to compare.</p>
+<p><span class="action">Action:</span> Web search</p>
+<p><span class="action-input">Action Input:</span> Src/Abl inhibitors list</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> Bcr-Abl inhibitors paved the way of targeted therapy epoch. Imatinib was the first tyrosine kinase inhibitor to be discovered with high …</span></p>
+<p><span class="thought">Thought:</span> I found a list of Src/Abl inhibitors. I will select Imatinib as a reference compound and obtain its SMILES.</p>
+<p><span class="action">Action:</span> Get SMILES of molecule</p>
+<p><span class="action-input">Action Input:</span> Imatinib</p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CN1CCN(CC2=CC=C(C=C2)C(=O)NC2=CC=C(C)C(NC3=NC=CC(=N3)C3=CC=CN=C3)=C2)CC1">SMILES<span class="tooltip-text">CN1CCN(CC2=CC=C(C=C2)C(=O)NC2=CC=C(C)C(NC3=NC=CC(=N3)C3=CC=CN=C3)=C2)CC1</span></span></span></p>
+<p><span class="thought">Thought:</span> I have the SMILES of Imatinib. Now I will modify it slightly to create a novel compound and check if it’s patented.</p>
+<p><span class="action">Action:</span> Molecule modificator</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CN1CCN(CC2=CC=C(C=C2)C(=O)NC2=CC=C(C)C(NC3=NC=CC(=N3)C3=CC=CN=C3)=C2)CC1">SMILES<span class="tooltip-text">CN1CCN(CC2=CC=C(C=C2)C(=O)NC2=CC=C(C)C(NC3=NC=CC(=N3)C3=CC=CN=C3)=C2)CC1</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1">SMILES<span class="tooltip-text">Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1</span></span></span></p>
+<p><span class="thought">Thought:</span> I have created a modified molecule. Now I will check if it’s patented.</p>
+<p><span class="action">Action:</span> Patent checker</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1">SMILES<span class="tooltip-text">Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> Novel</span></p>
+<p><span class="thought">Thought:</span> Great, the modified molecule is not patented. Now I will search for a supplier or draft an email to a synthesis CRO to order a custom synthesis.</p>
+<p><span class="action">Action:</span> Get price of molecule</p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1">SMILES<span class="tooltip-text">Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1</span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> Compound couldn’t be found.</span></p>
+<p><span class="thought">Thought:</span> Since the compound couldn’t be found, I will draft an email to a synthesis CRO to order a custom synthesis.</p>
+<p><span class="final-answer">Final Answer:</span></p>
+<p>Subject: Custom Synthesis of Novel Src/Abl Inhibitor</p>
 <p>Dear [CRO Representative],</p>
 <p>We are interested in ordering a custom synthesis of a novel compound with potential Src/Abl inhibitory activity. The designed compound has the following SMILES structure:</p>
-<p>Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1</p>
+<p><span class="custom-tooltip" data-clipboard-text="Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1">SMILES<span class="tooltip-text">Cc1ccc(NC(=O)c2ccc(COCCN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1</span></span></p>
 <p>We would like to request a quotation for the synthesis of this compound, including costs, turnaround time, and any additional information you may require. Please let us know the next steps in placing this order.</p>
 <p>Thank you for your assistance.</p>
 <p>Sincerely,</p>
@@ -361,86 +404,23 @@ Propose a compound with similar properties to the drug Dasatinib. Find a supplie
 </div>
 </div>
 </details>
-</section>
-<section id="task-5" class="level1">
-<h1>Task 5</h1>
-<details>
-<summary>
-</summary>
-<div class="columns">
-<div class="column justify-text" style="width:45%;">
-<section id="gpt-4-no-tools-4" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-no-tools-4">GPT-4 no tools</h3>
-</section>
-</div><div class="column" style="width:10%;">
+<script>
+  function copyToClipboard(text) {
+    const el = document.createElement('textarea');
+    el.value = text;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  }
 
-</div><div class="column justify-text" style="width:45%;">
-<section id="gpt-4-chemtools-4" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-chemtools-4">GPT-4 + chemtools</h3>
-</section>
-</div>
-</div>
-</details>
-</section>
-<section id="task-6" class="level1">
-<h1>Task 6</h1>
-<details>
-<summary>
-</summary>
-<div class="columns">
-<div class="column justify-text" style="width:45%;">
-<section id="gpt-4-no-tools-5" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-no-tools-5">GPT-4 no tools</h3>
-</section>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column justify-text" style="width:45%;">
-<section id="gpt-4-chemtools-5" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-chemtools-5">GPT-4 + chemtools</h3>
-</section>
-</div>
-</div>
-</details>
-</section>
-<section id="task-7" class="level1">
-<h1>Task 7</h1>
-<details>
-<summary>
-</summary>
-<div class="columns">
-<div class="column justify-text" style="width:45%;">
-<section id="gpt-4-no-tools-6" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-no-tools-6">GPT-4 no tools</h3>
-</section>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column justify-text" style="width:45%;">
-<section id="gpt-4-chemtools-6" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-chemtools-6">GPT-4 + chemtools</h3>
-</section>
-</div>
-</div>
-</details>
-</section>
-<section id="task-8" class="level1">
-<h1>Task 8</h1>
-<details>
-<summary>
-</summary>
-<div class="columns">
-<div class="column justify-text" style="width:45%;">
-<section id="gpt-4-no-tools-7" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-no-tools-7">GPT-4 no tools</h3>
-</section>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column justify-text" style="width:45%;">
-<section id="gpt-4-chemtools-7" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-4-chemtools-7">GPT-4 + chemtools</h3>
-</section>
-</div>
-</div>
-</details>
+  document.querySelectorAll('.custom-tooltip').forEach(function(tooltip) {
+    tooltip.addEventListener('click', function() {
+      const textToCopy = tooltip.getAttribute('data-clipboard-text');
+      copyToClipboard(textToCopy);
+    });
+  });
+</script>
 
 
 </section>
