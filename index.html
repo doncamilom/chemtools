@@ -129,6 +129,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Here we showcase the use of LLMs in the context of <span class="observ">chemical reasoning</span> for the solution of challenging tasks requiring <span class="observ">planning, multistep decision making, and tool exploitation</span>.</p>
+<p>In our approach, we instruct an LLM to <span class="observ">solve some task by using a set of predefined tools for chemistry, while reasoning step-by-step</span>. Our results show how LLMs can be used to solve rutinary, as well as more involved tasks in chemistry, while lowering the entry barrier to a simple text request.</p>
+<p>This work is powered by <a href="https://langchain.readthedocs.io/en/latest/index.html">Langchain</a> 🦜️🔗 and OpenAI’s <a href="https://cdn.openai.com/papers/gpt-4.pdf">GPT-4</a>.</p>
+<p><span class="explain">Below we propose some sample tasks in chemistry that we give a language model to solve. Left is plain GPT-4’s solution, and right is the solution of GPT-4 using our toolset.</span></p>
+<p><span class="contact">If you want to propose a task, tool, or just want to discuss, feel free to <a href="./about.html">contact us</a>!</span></p>
 <p><br></p>
 <section id="task-1" class="level1">
 <h1>Task 1</h1>
@@ -244,7 +249,7 @@ I need a sample of nicotine or some similar molecule. Propose a list of 3 simila
 <p><span class="thought">Thought:</span> Now I have the SMILES of imidacloprid, I will obtain the SMILES of acetamiprid and dinotefuran.</p>
 <p><span class="action">Action:</span> Get SMILES of molecule</p>
 <p><span class="action-input">Action Input:</span> Acetamiprid</p>
-<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CN(CC1=CC=C(Cl)N=C1)C(\C)=N\C#N">SMILES<span class="tooltip-text">CN(CC1=CC=C(Cl)N=C1)C()=N#N</span></span></span></p>
+<p><span class="observ">Observation:</span> <span class="observ-body"> <span class="custom-tooltip" data-clipboard-text="CN(CC1=CC=C(Cl)N=C1)C(\C)=N\C#N">SMILES<span class="tooltip-text">“CN(CC1=CC=C(Cl)N=C1)C()=N#N”</span></span></span></p>
 <p><span class="thought">Thought:</span> Now I have the SMILES of acetamiprid, I will obtain the SMILES of dinotefuran.</p>
 <p><span class="action">Action:</span> Get SMILES of molecule</p>
 <p><span class="action-input">Action Input:</span> Dinotefuran</p>
@@ -255,7 +260,7 @@ I need a sample of nicotine or some similar molecule. Propose a list of 3 simila
 <p><span class="observ">Observation:</span> <span class="observ-body"> The Tanimoto similarity between <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span> and <span class="custom-tooltip" data-clipboard-text="[O-][N+](=O)\N=C1/NCCN1CC1=CC=C(Cl)N=C1">SMILES<span class="tooltip-text">[O-][N+](=O)=C1/NCCN1CC1=CC=C(Cl)N=C1</span></span> is 0.1452, indicating that the two molecules are not similar.</span></p>
 <p><span class="thought">Thought:</span> I have the similarity between nicotine and imidacloprid. I will compare the similarity of nicotine to acetamiprid and dinotefuran.</p>
 <p><span class="action">Action:</span> Molecular similarity calculator</p>
-<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span></p>
+<p><span class="action-input">Action Input:</span> <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span>, <span class="custom-tooltip" data-clipboard-text="CN(CC1=CC=C(Cl)N=C1)C(\C)=N\C#N">SMILES<span class="tooltip-text">CN(CC1=CC=C(Cl)N=C1)C()=N#N</span></span></p>
 <p><span class="observ">Observation:</span> <span class="observ-body"> The Tanimoto similarity between <span class="custom-tooltip" data-clipboard-text="CN1CCCC1C1=CC=CN=C1">SMILES<span class="tooltip-text">CN1CCCC1C1=CC=CN=C1</span></span> and <span class="custom-tooltip" data-clipboard-text="CN(CC1=CC=C(Cl)N=C1)C(\C)=N\C#N">SMILES<span class="tooltip-text">CN(CC1=CC=C(Cl)N=C1)C()=N#N</span></span> is 0.1, indicating that the two molecules are not similar.</span></p>
 <p><span class="thought">Thought:</span> I have the similarity between nicotine and acetamiprid. I will compare the similarity of nicotine to dinotefuran.</p>
 <p><span class="action">Action:</span> Molecular similarity calculator</p>

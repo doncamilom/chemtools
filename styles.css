@@ -31,6 +31,15 @@
   font-weight: bold
 }
 
+.contact{
+  color: #2e7d32;
+  font-weight: bold
+}
+.explain{
+  color: #420f8d;
+  font-weight: bold
+
+}
 
 .custom-tooltip {
   position: relative;
