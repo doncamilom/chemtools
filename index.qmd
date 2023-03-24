@@ -1,7 +1,143 @@
 ---
-title: "chemtools"
+title: ChemTools example tasks
+output:
+  html_document:
+    css: styles.css
 ---
 
-This is a Quarto website.
+<br>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Task 1
+
+
+<details>
+<summary>
+Tell me what is the boiling point of the reaction product between isoamyl acetate and ethanol. 
+To do this, predict the product of this reaction, and find its boiling point
+</summary>
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="45%" .justify-text}
+
+### GPT-4 no tools
+
+I need to find the SMILES of isoamyl acetate and ethanol.
+
+<span class="action">Action:</span> Get SMILES of molecule
+
+<span class="action-input">Action Input:</span> isoamyl acetate
+
+<span class="observ">Observation:</span> <span class="observ-body">CC(C)CCOC(C)=O</span>
+
+<span class="thought">Thought:</span> I now have the SMILES of isoamyl acetate. I need the SMILES of ethanol.
+
+<span class="action">Action:</span> Get SMILES of molecule
+
+<span class="action-input">Action Input:</span> ethanol
+
+<span class="observ">Observation:</span>  <span class="observ-body">CCO</span>
+
+
+<span class="thought">Thought:</span> I have the SMILES of both isoamyl acetate and ethanol. I will now predict the product of their reaction.
+
+<span class="action">Action:</span> Reaction prediction
+
+<span class="action-input">Action Input:</span> CC(C)CCOC(C)=O.CCO
+
+<span class="observ">Observation:</span>  <span class="observ-body">CC(C)CCO</span>
+
+
+<span class="thought">Thought:</span> I have the SMILES of the reaction product. I need to find the name of this molecule to search for its boiling point.
+
+<span class="action">Action:</span> Obtain molecule name
+
+<span class="action-input">Action Input:</span> CC(C)CCO
+
+<span class="observ">Observation:</span>  <span class="observ-body">123-51-3</span>
+
+
+<span class="thought">Thought:</span> I have the name of the molecule as its CAS number (123-51-3). I will now search for its boiling point.
+
+<span class="action">Action:</span> Web search
+
+<span class="action-input">Action Input:</span> 123-51-3 boiling point
+
+<span class="observ">Observation:</span>  <span class="observ-body">Boiling Point: 130 °C(lit.)</span>
+
+
+<span class="thought">Thought:</span> I now know the boiling point of the reaction product.
+
+Final Answer: The boiling point of the reaction product between isoamyl acetate and ethanol is 130 °C.
+:::
+
+::: {.column width="10%"}
+:::
+::: {.column width="45%" .justify-text}
+### GPT-4 + chemtools
+
+First, I need to find the SMILES of isoamyl acetate and ethanol.
+
+<span class="action">Action:</span> Get SMILES of molecule
+
+<span class="action-input">Action Input:</span> isoamyl acetate
+
+<span class="observ">Observation:</span>  <span class="observ-body">CC(C)CCOC(C)=O</span>
+
+
+<span class="thought">Thought:</span> Now I have the SMILES of isoamyl acetate, I need to get the SMILES of ethanol.
+
+<span class="action">Action:</span> Get SMILES of molecule
+
+<span class="action-input">Action Input:</span> ethanol
+
+<span class="observ">Observation:</span>  <span class="observ-body">CCO</span>
+
+
+<span class="thought">Thought:</span> Now I have the SMILES of both isoamyl acetate and ethanol, I need to predict the product of their reaction.
+
+<span class="action">Action:</span> Reaction prediction
+
+<span class="action-input">Action Input:</span> CC(C)CCOC(C)=O.CCO
+
+<span class="observ">Observation:</span>  <span class="observ-body">CC(C)CCO</span>
+
+
+<span class="thought">Thought:</span> Now I have the product of the reaction, I need to find its boiling point.
+
+<span class="action">Action:</span> Web search
+
+<span class="action-input">Action Input:</span> CC(C)CCO boiling point
+
+<span class="observ">Observation:</span>  <span class="observ-body">Because of this, water boils at 99.97 °C (211.95 °F) under standard pressure at sea level, but at 93.4 °C (200.1 °F) at 1,905 metres (6,250 ft) altitude. For a ...</span>
+
+
+<span class="thought">Thought:</span> The web search result seems unrelated to the boiling point of the reaction product. I need to try another search with the molecule's name.
+
+<span class="action">Action:</span> Obtain molecule name
+
+<span class="action-input">Action Input:</span> CC(C)CCO
+
+<span class="observ">Observation:</span>  <span class="observ-body">123-51-3</span>
+
+
+<span class="thought">Thought:</span> Now I have the registry number of the reaction product, I will use it to search for its boiling point.
+
+<span class="action">Action:</span> Web search
+
+<span class="action-input">Action Input:</span> 123-51-3 boiling point
+
+<span class="observ">Observation:</span>  <span class="observ-body">Boiling Point: 130 °C(lit.)</span>
+
+
+<span class="thought">Thought:</span> I now know the final answer
+
+Final Answer: The boiling point of the reaction product between isoamyl acetate and ethanol is 130°C.
+:::
+
+
+
+::::
+</details>

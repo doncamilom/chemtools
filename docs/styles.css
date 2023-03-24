@@ -1,1 +1,27 @@
 /* css styles */
+
+.justify-text{
+ text-align:justify
+}
+
+.action{
+  color: #d90000;
+  font-weight: bold
+}
+.action-input{
+  color: #d90000;
+  font-weight: bold
+}
+.observ{
+  color: #d90000;
+  font-weight: bold
+}
+.thought{
+  color: #45bf55;
+  font-weight: bold
+}
+
+.observ-body{
+  color: #ff00d7;
+  font-weight: bold
+}
