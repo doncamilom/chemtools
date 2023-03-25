@@ -1,5 +1,9 @@
 /* css styles */
 
+.gpt4{
+  font-weight: bold;
+  color: #30b9d5;
+}
 .justify-text{
  text-align:justify
 }
